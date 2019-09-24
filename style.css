@@ -1,0 +1,93 @@
+/* ---- reset ---- */
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,h2,h3,h4,h5 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+  /* ---- typography ---- */
+
+
+body {
+  color: black;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+  
+  /* ---- nav ---- */
+
+.nav-bar {
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    height: 50px;
+}
+
+.burger {
+  width: 30px;
+}
+
+
+  /* ---- section-one ---- */
+
+.section-one{
+  height: 974px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 130px;
+}
+
+.section-one h1 {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.section-one h2 {
+  padding-bottom: 70px;
+  font-weight: normal;
+  font-size: 36px;
+}
+
+.section-one h3 {
+  padding-bottom: 170px;
+  font-size: 26px;
+}
+
+.foto {
+  max-width: 375px;
+}
+  /* ---- about ---- */
+
+.about {
+  position: relative;
+  background-color: rgb(252, 0, 84);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
