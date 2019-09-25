@@ -91,3 +91,10 @@ img {
   align-items: center;
 }
 
+.section-two{
+  height: 974px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 130px;
+}
