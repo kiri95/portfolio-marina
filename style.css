@@ -87,6 +87,7 @@ ul {
 
 .foto {
   max-width: 375px;
+  border-radius: 50px;
 }
   /* ---- about ---- */
 
