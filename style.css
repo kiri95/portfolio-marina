@@ -260,24 +260,27 @@ header {
 .prototipo {
   height: 100vh;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   text-align: center;
   font-size: 25px;
+  padding-top: 50px;
+  
   }
 
 .prototipo div {
+  overflow-y: scroll;
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
-  flex-wrap: wrap;
-  transform: scale(1.2)
+  padding-left: 40px;
+  height: 90%;
+  padding-top: 40px;
 }
 
 .prototipo div img{
-  width: 120px;
-  padding-bottom: 40px;
+  padding: 0 60px;
+  width: 500px;
+  transform: scale(1.6)
 }
   
 .contact {
