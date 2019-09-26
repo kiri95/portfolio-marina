@@ -88,6 +88,10 @@ ul {
 .foto {
   max-width: 375px;
   border-radius: 50px;
+  -moz-box-shadow:inset 0px 0px 3px 1px rgba(0,0,0,1);
+  -webkit-box-shadow:inset 0px 0px 3px 1px rgba(0,0,0,1);
+  box-shadow:inset 0px 0px 3px 1px rgba(0,0,0,1);
+
 }
   /* ---- about ---- */
 
