@@ -67,7 +67,7 @@ header {
   width: 30px;
 }
 
-/* .navegador {
+.navegador {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,8 +76,11 @@ header {
   margin: 0;
   text-align: center;
   font-size: 30px; 
-} */
+}
 
+.hidden {
+  display: none;
+}
 /* ---- section-one ---- */
 
 .section-one{
