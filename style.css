@@ -210,14 +210,13 @@ ul {
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
-  margin: 0 20px;
   overflow: hidden;
 
 }
 
 .ui p {
   text-align: justify;
-  margin: 0 25px;
+  margin: 0 35px;
 }
 
 .ui img {
@@ -225,6 +224,7 @@ ul {
   width: 100%;
   transform: scale(1.25) rotate(-17deg);
   margin-left: 15px;
+
 }
 
 .ui h4 {
