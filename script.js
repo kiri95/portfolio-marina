@@ -4,13 +4,15 @@ $(document).ready( function(){
 
 
 
-  $('#burger').click(function() {
+  $('.button').click(function () {
+    $('.hamburger').toggleClass('open');
     $('#nav').toggleClass('hidden')
   })
 
-  $('.button').click(function () {
+  $('.hamburger').click(function () {
+    $('.hamburger').toggleClass('open');
     $('#nav').toggleClass('hidden')
-  })
+});
 
 
 })
