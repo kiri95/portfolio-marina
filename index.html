@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="style.css">
-
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap"
         rel="stylesheet">
@@ -19,13 +19,21 @@
 </head>
 
 <body>
+    <header>
+        <nav class="nav-bar">
+            <a href="#home"><p>Marinatg.</p></a>
+            <img id="burger" class="burger" src="images/burger.svg" alt="burger-menu">
+        </nav>
+        <section class="hidden navegador" id="nav">
+            <ul>
+                <a class="button" href="#about"><li>About</li></a>
+                <a class="button" href="#work"><li>Work</li></a>
+                <a class="button" href="#contact"><li>Contact</li></a>
+            </ul>
+        </section>
+    </header>
 
-    <nav class="nav-bar">
-        <p>Marinatg.</p>
-        <img class="burger" src="images/burger.svg" alt="burger-menu">
-    </nav>
-
-    <section class="section-one">
+    <section class="section-one" id="home" >
         <h1>Marina Tomás</h1>
         <h2>UX/UI Designer</h2>
         <h3><a href="https://www.linkedin.com/in/marinatg/">LinkedIn</a> - <a
@@ -33,7 +41,7 @@
         <img class="foto" src="images/imagenprincipal.jpg" alt="foto-de-marina">
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <img src="images/about.png" alt="about">
     </section>
 
@@ -71,7 +79,7 @@
         </ul>
     </section>
 
-    <section class="work">
+    <section class="work" id="work">
         <img src="images/Work.png" alt="work">
     </section>
 
@@ -113,7 +121,7 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <img src="images/Contact.png" alt="contact">
     </section>
 
@@ -124,5 +132,8 @@
     </section>
 
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
 
 </html>
