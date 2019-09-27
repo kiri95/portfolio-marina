@@ -150,7 +150,7 @@ header {
 /* ---- section-one ---- */
 
 .section-one{
-  height: 974px;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -193,15 +193,15 @@ header {
 }
 
 .about-me {
-  height: 120vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   margin: 0px 20px;
   font-size: 16px;
   margin-top:20px;
   padding-bottom: 20px;
-  justify-content: space-around;
-
+  justify-content: flex-start;
+  overflow-x: scroll;
 }
 
 .red {
@@ -296,7 +296,7 @@ header {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   text-align: center;
   overflow: hidden;
 
@@ -308,11 +308,10 @@ header {
 }
 
 .ui img {
-  margin-top: 20px;
+  margin-top: 20%;
   width: 100%;
   transform: scale(1.25) rotate(-17deg);
   margin-left: 15px;
-
 }
 
 .ui h4 {
@@ -345,7 +344,7 @@ header {
 
 .prototipo div img{
   padding: 0 60px;
-  width: 500px;
+  width: 90%;
   transform: scale(1.6)
 }
   
