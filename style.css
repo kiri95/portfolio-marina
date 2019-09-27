@@ -110,12 +110,43 @@ header {
   background-color: white;
   margin: 0;
   text-align: center;
-  font-size: 30px; 
+  font-size: 30px;
+  position:relative;
+  animation:animateright 1s;
+}
+
+@keyframes animateright{
+  from{
+    right:-300px;
+    opacity:0
+  } 
+  to{
+    right:0;
+    opacity:1
+  }
 }
 
 .hidden {
+  opacity: 0;
+  position:relative;
+  animation:animateleft 1s;
+}
+
+.none {
   display: none;
 }
+
+@keyframes animateleft{
+  from{
+    left:0px;
+    opacity:1
+  } 
+  to{
+    left:300px;
+    opacity:0
+  }
+}
+
 /* ---- section-one ---- */
 
 .section-one{
