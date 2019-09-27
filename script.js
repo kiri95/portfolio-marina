@@ -2,15 +2,17 @@
 
 $(document).ready( function(){
 
-
-
-  $('#burger').click(function() {
-    $('#nav').toggleClass('hidden')
-  })
-
   $('.button').click(function () {
+    $('.hamburger').toggleClass('open');
     $('#nav').toggleClass('hidden')
   })
+
+  $('.hamburger').click(function () {
+    $('.hamburger').toggleClass('open');
+    $('#nav').toggleClass('hidden')
+    $('#nav').removeClass('none')
+
+});
 
 
 })
