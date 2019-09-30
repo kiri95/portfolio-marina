@@ -23,87 +23,94 @@
 <body>
     <header>
         <nav class="nav-bar">
-            <a href="#home"><p>Marinatg.</p></a>
+            <a href="#home"><p class="hover">Marinatg.</p></a>
             <div class="hamburger">
                 <div class="hamburger-inner"></div>
             </div>
         </nav>
         <section class="hidden navegador none" id="nav">
             <ul>
-                <a class="button" href="#about"><li>About</li></a>
-                <a class="button" href="#work"><li>Work</li></a>
-                <a class="button" href="#contact"><li>Contact</li></a>
+                <a class="button" href="#about"><li class="hover">About</li></a>
+                <a class="button" href="#work"><li class="hover">Work</li></a>
+                <a class="button" href="#contact"><li class="hover">Contact</li></a>
             </ul>
         </section>
     </header>
 
     <section class="section-one" id="home" >
-        <h1>Marina Tomás</h1>
-        <h2>UX/UI Designer</h2>
-        <h3><a href="https://www.linkedin.com/in/marinatg/">LinkedIn</a> - <a
-                href="https://medium.com/@mtginamarina">Medium</a></h3>
+        <div>
+            <div>
+                <h1>Marina Tomás</h1>
+                <h2>UX/UI Designer</h2>
+            </div>
+            <h3 class="inline"><a href="https://www.linkedin.com/in/marinatg/" target="_blank"><p class="hover">LinkedIn</p></a> - <a href="https://medium.com/@mtginamarina" target="_blank"><p class="hover">Medium</p></a></h3>
+        </div>
         <img class="foto" src="images/imagenprincipal.jpg" alt="foto-de-marina">
     </section>
+    <section class="all-about">
+        <div class="about" id="about">
+            <img src="images/about.png" alt="about">
+        </div>
 
-    <section class="about" id="about">
-        <img src="images/about.png" alt="about">
+        <div class="about-me">
+            <h4>Soy diseñadora de UX/UI residente<br> en Madrid</h4>
+            <br>
+            <h5>Diseño UX</h5>
+            <br>
+            <p>Una Mentalidad centrada en el usuario, analizar la competencia y hacer un research a fondo. <br><br> Este
+                marco general describe mi proceso de desarrollo de experiencias digitales:</p>
+            <ul>
+                <li><b class="red">1. </b><b>RESEARCH</b></li>
+                <li><b class="red">2. </b><b>ESTRUCTURA</b> de la configuración y el contenido del proyecto</li>
+                <li><b class="red">3. </b><b>CONCEPTO Y ESTRATEGIA</b></li>
+                <li><b class="red">4. </b><b>CREO,</b> evaluo e itero entregas como:</li>
+            </ul>
+            <ul class="center">
+                <li>User personas</li>
+                <li>Site maps</li>
+                <li>Use cases and scenarios</li>
+                <li>User flow</li>
+                <li>Sketches</li>
+                <li>Wireframes</li>
+            </ul>
+            <br>
+            <h5>Diseño UI</h5>
+            <br>
+            <p>La parte atractiva del diseño:</p>
+            <ul>
+                <li><b>Diseño de prototipo</b> (cómo responde el sistema)</li>
+                <li><b>Guías de interacción</b> (estados del sistema)</li>
+                <li><b> Diseño de elementos</b> (botones, formularios)</li>
+                <li><b>Diseño visual</b> (iconos, imágenes)</li>
+                <li><b> Guías de estilo</b> (paletas de color, fonts)</li>
+            </ul>
+        </div>
     </section>
 
-    <section class="about-me">
-        <h4>Soy diseñadora de UX/UI residente<br> en Madrid</h4>
-        <br>
-        <h5>Diseño UX</h5>
-        <br>
-        <p>Una Mentalidad centrada en el usuario, analizar la competencia y hacer un research a fondo. <br><br> Este
-            marco general describe mi proceso de desarrollo de experiencias digitales:</p>
-        <ul>
-            <li><b class="red">1. </b><b>RESEARCH</b></li>
-            <li><b class="red">2. </b><b>ESTRUCTURA</b> de la configuración y el contenido del proyecto</li>
-            <li><b class="red">3. </b><b>CONCEPTO Y ESTRATEGIA</b></li>
-            <li><b class="red">4. </b><b>CREO,</b> evaluo e itero entregas como:</li>
-        </ul>
-        <ul class="center">
-            <li>User personas</li>
-            <li>Site maps</li>
-            <li>Use cases and scenarios</li>
-            <li>User flow</li>
-            <li>Sketches</li>
-            <li>Wireframes</li>
-        </ul>
-        <br>
-        <h5>Diseño UI</h5>
-        <br>
-        <p>La parte atractiva del diseño:</p>
-        <ul>
-            <li><b>Diseño de prototipo</b> (cómo responde el sistema)</li>
-            <li><b>Guías de interacción</b> (estados del sistema)</li>
-            <li><b> Diseño de elementos</b> (botones, formularios)</li>
-            <li><b>Diseño visual</b> (iconos, imágenes)</li>
-            <li><b> Guías de estilo</b> (paletas de color, fonts)</li>
-        </ul>
+    <section class="works">
+        <div class="work" id="work">
+            <img src="images/Work.png" alt="work">
+        </div>
+
+        <div class="vinted">
+            <a href="#work"><img class="img-vinted" src="images/Vinted_logo.png" alt="Logo-de-vinted"></a>
+            <h4 class="vacio" id="vin">Rediseño de la app vinted: <br><br> Parte UX</h4>
+            <p class="vacio" id="vin2">Hicimos un rediseño de algunas partes de la
+                app de Vinted, tuvimos que hacer un análisis
+                competitivo, hacer un Dafo y que podíamos
+                hacer para que Vinted fuera mejor.</p>
+            <img src="images/plus.png" alt="más" class="none plus vacio hover" id="vin3">
+        </div>
     </section>
 
-    <section class="work" id="work">
-        <img src="images/Work.png" alt="work">
-    </section>
-
-    <section class="vinted">
-        <img class="img-vinted" src="images/Vinted_logo.png" alt="Logo-de-vinted">
-        <h4>Rediseño de la app vinted: <br><br> Parte UX</h4>
-        <p>Hicimos un rediseño de algunas partes de la
-            app de Vinted, tuvimos que hacer un análisis
-            competitivo, hacer un Dafo y que podíamos
-            hacer para que Vinted fuera mejor.</p>
-    </section>
-
-    <section class="brainstorm">
+    <section class="brainstorm vacio">
         <h4>Brainstorming</h4>
         <img class="img-brainstorm" src="images/Brainstorming.jpg" alt="brainstorm">
         <h4 class="user-persona">User persona</h4>
         <img class="img-persona" src="images/Captura de pantalla 2019-09-08 a las 21.03.35.png" alt="persona">
     </section>
 
-    <section class="ui" >
+    <section class="ui vacio" >
         <h4>Parte UI</h4>
         <p>Aquí nos centramos en rediseñar, la interfaz y tratar de que las fotos se vieran bien, implementar un avatar
             para que los usuarios pudieran ver como les quedaba la ropa. Mejoramos botones como el del corazón para
@@ -113,7 +120,7 @@
         <img src="images/style.png" alt="Style-tiles">
     </section>
 
-    <section class="prototipo">
+    <section class="prototipo vacio">
         <h4>Prototipo</h4>
         <div>
             <img src="images/1.png" alt="prototipo">
@@ -125,14 +132,16 @@
         </div>
     </section>
 
-    <section class="contact" id="contact">
-        <img src="images/Contact.png" alt="contact">
-    </section>
+    <section class="contacts">
+        <div class="contact" id="contact">
+            <img src="images/Contact.png" alt="contact">
+        </div>
 
-    <section class="contact-texto">
-        <p> Estoy disponible para proyectos freelance y empleo a tiempo completo. <br><br> <b>Marina Tomás UX UI Designer</b> </p>
-        <img src="images/Marinatg.png" alt="">
-        <p><b><a href="mailto:mtginamarina@gmail.com">mtginamarina@gmail.com</a></b><br><br><b><a href="tel:+34650186495">+34 650 18 64 95</a></b></p>
+        <div class="contact-texto">
+            <p> Estoy disponible para proyectos freelance y empleo a tiempo completo. <br><br> <b>Marina Tomás UX UI Designer</b> </p>
+            <img src="images/Marinatg.png" alt="">
+            <div class="mail-number"><b><a href="mailto:mtginamarina@gmail.com"><p class="hover">mtginamarina@gmail.com</p></b><br><br><b><a href="tel:+34650186495"><p class="hover">+34 650 18 64 95</p></a></b></div>
+        </div>
     </section>
 
 </body>
