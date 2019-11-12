@@ -50,7 +50,11 @@ header {
   position: fixed;
   width: 100%;
   background-color: white;
-  z-index: 5;
+  z-index: 999;
+}
+
+p {
+  font-size: 20px
 }
 
 @media (max-width: 600px){
@@ -201,7 +205,7 @@ header {
 }
 
 .about-me {
-  height: 100vh;
+  height: max-content;
   display: flex;
   flex-direction: column;
   padding: 0px 20px;
@@ -246,7 +250,7 @@ header {
 
 
 
-.vinted {
+.vinted, .five, .stylex {
   height: 100vh;
   position: relative;
   display: flex;
@@ -256,18 +260,18 @@ header {
   padding: 0 40px;
 }
 
-.vinted h4 {
+.vinted h4, .five h4, .stylex h4 {
   text-align: center;
   font-size: 20px;
 }
 
-.img-vinted {
+.img-vinted, .img-five, .img-stylex {
   max-width: 300px;
 } 
 
 
 .brainstorm {
-  height: 100vh;
+  height: max-content;
   position: relative;
   overflow: hidden;
 }
@@ -306,11 +310,14 @@ header {
   justify-content: flex-start;
   text-align: center;
   overflow: hidden;
+  padding-top: 100px;
 }
 
 .ui p {
   text-align: justify;
   margin: 0 35px;
+  z-index: 9;
+  background-color: white;
 }
 
 .ui img {
@@ -320,7 +327,7 @@ header {
   margin-left: 15px;
 }
 
-.ui h4 {
+.ui h3 {
   font-size: 20px;
 }
 
@@ -371,6 +378,16 @@ header {
   font-size: 20px;
   text-align: justify;
   padding: 0 25px;
+}
+
+#vin3, #fiv3, #sty3 {
+  border-bottom: 1px dotted black;
+}
+
+.brainstorm h3 {
+  position: relative;
+  left: 50px;
+  font-size: 20px;
 }
 
 .mail-number {
@@ -433,7 +450,7 @@ header {
     flex-direction: row-reverse;
   }
 
-  .about, .about-me, .work, .vinted, .contact, .contact-texto {
+  .about, .about-me, .work, .works-child, .contact, .contact-texto {
     width: 50%;
     margin: 0;
     padding-top: 50px;
@@ -468,5 +485,128 @@ header {
   .about-me {
     overflow-y: scroll; 
     justify-content: flex-start;
+  }
+}
+
+@media (min-width: 600px) {
+  .brainstorm {
+    position: relative;
+    padding-top: 100px;
+  }
+
+  .ui h3 {
+    text-align: start;
+    padding-left: 35px;
+    margin-bottom: 20px;
+  }
+
+  .ui img {
+    margin-top: 150px;
+  }
+
+  .prototipo div img {
+    width: 350px;
+    padding: 10px 10px; 
+  }
+
+  .prototipo div {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: max-content;
+  }
+
+  .prototipo {
+    height: max-content;
+    margin-bottom: 50px;
+  }
+
+  .brainstorm .user-persona{
+    margin-top: 200px;
+    
+  }
+
+  .img-persona {
+    margin-top: 100px;
+    transform: scale(1)
+  }
+
+  #vinted, #five, #stylex {
+    position: relative;
+    animation:animatebottom 1s;
+  }
+  
+  @keyframes animatebottom{
+    from{
+      top:-100vh;
+      opacity:0
+    } 
+    to{
+      top:0;
+      opacity:1
+    }
+  }
+
+  .works-child {
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-y: scroll;
+    width: 100vw;
+  }
+
+  .work {
+    margin-left: 50vw;
+  }
+
+  .vinted, .five {
+    position: relative;
+    width: 50vw;
+  }
+
+  .pepe {
+    width: 50vw;
+    position: absolute;
+  }
+
+  #five .img-brainstorm {
+    transform: none;
+  }
+
+  #five .brainstorm h4 {
+    border: none;
+  }
+
+  #five .ui {
+    height: max-content;
+  }
+
+  #five .ui img {
+    transform: none;
+    margin: 0;
+  }
+
+  #five .prototipo h3, #stylex .prototipo h3 {
+    text-align: start;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .five-persona {
+    width: 100vw;
+  }
+
+  .affinity-stylex {
+    margin-top: 30px;
+    width: 100%;
+    transform: scale(1) rotate(-17deg);
+  }
+
+  .z-index {
+    z-index: 9;
   }
 }
